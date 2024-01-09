@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Form</title>
+    <style>
+        body{
+    background-color: rgb(37, 9, 34);
+    font-family: 'Lato', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+/*----------- REUSABLE COMPONENTS -----------*/
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    font-size: 50px;
+}
+.main-app{
+    position: absolute;
+    width: 360px;
+    height: 500px;
+    background: lightblue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.thecard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    background: transparent;
+    transition: all 0.5s ease;
+}
+
+.thefront{
+    box-shadow: 2px 2px 5px #000;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    backface-visibility: hidden;
+    background: lightslategray;
+    color: #333;
+    padding: 14% 10%;
+}
+
+.theback{
+    padding: 14% 10%;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    backface-visibility: hidden;
+    background: lightslategray;
+    color: #333;
+    box-shadow: 2px 2px 5px #000;
+    transform: rotateY(180deg);
+    
+}
+
+
+
+
+
+/*
+//////////////// LOG IN ////////////////////
+*/
+
+.inputs{
+    margin: 10px 0px 20px 0px;
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    background: transparent;
+}
+
+.btn{
+    /* background-color: purple; */
+    background: linear-gradient(to left,#12c2e9,#c471ed);
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin: 5px;
+    outline: none;
+    border-radius: 40px/50px;
+}
+
+.btn:hover{
+    box-shadow: 1px 1px 2px #000;   
+}
+label{
+    font-weight: 700;
+}
+#btn1{
+    margin-top: 20px;
+}
+
+
+
+/*
+//////////////// LOG IN ////////////////////
+*/
+
+#register{
+    margin-top: -18px;
+}
+    </style>
+</head>
+<body>
+    <div class="main-app">
+        <div class="thecard">
+          <div class="thefront">
+            <h1>Log in</h1>
+            <label>Email ID</label>
+            <input type="email" class="inputs">
+            <label>Password</label>
+            <input type="password" class="inputs">
+    
+            <button id="btn1" class="btn">Submit</button>
+            <button id="btn2" class="btn">Register</button>
+          </div>
+          
+          <div class="theback">
+            <h1 id="register">Register</h1>
+            <label>Name</label>
+            <input type="text" class="inputs">
+            <label>Email ID</label>
+            <input type="email" class="inputs">
+            <label>Password</label>
+            <input type="password" class="inputs">
+      
+            <button id="btn3" class="btn">Submit</button>
+            <button id="btn4" class="btn">Log in</button>
+          </div>
+        </div>
+      </div>
+
+    <script>
+        let Btn2 = document.querySelector('#btn2');
+        let Btn4 = document.querySelector('#btn4');
+        let Base = document.querySelector('.thecard')
+        Btn2.addEventListener('click', function(e){
+        console.log('btn working');
+        e.preventDefault();
+//    base.classList.add('animatethecard');
+       Base.style.transform="rotateY(180deg)";
+});
+
+       Btn4.addEventListener('click', function(e){
+       console.log('btn working');
+       e.preventDefault();
+//    base.classList.add('animatethecard');
+       Base.style.transform="rotateY(0deg)";
+});
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHATBOT For Question Answering</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- --------------fontawesome link-------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    #Logo{
+     height: 50px;
+     width: 60px;
+    }
+
+    #box{
+    margin: 2% auto;
+    height: 90vh;
+    width: 30vw;
+    border: black solid 2px;
+    border-radius: 20px;
+    position: relative;
+    overflow:hidden;
+}
+#first-page{
+    background-color: rgb(18, 18, 241);
+    height: 90vh;
+    width: 30vw;
+}
+.hidden{
+    visibility: hidden;
+}
+#btn1{
+    position: absolute;
+    bottom: 1%;
+    left: 16%;
+    height: 10%;
+    width: 65%;
+    font-size: larger;
+    background-color: coral;
+    color: whitesmoke;
+    font-weight: bold;
+    border: transparent;
+    border-radius: 3%;
+    cursor: pointer;
+}
+input{
+    position: absolute;
+    bottom: 12%;
+    height: 8%;
+    width: 82%;
+    left: 7%;
+    font-size: larger;
+    border-radius: 2%;
+}
+
+nav{
+    background-color: #2191ef;
+    position: absolute;
+    top: 0%;
+    height: 12%;
+    width: 100%;
+    z-index: 1;
+}
+#back{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+#chat_box{
+    bottom: 2%;
+    left: 2%;
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+  
+}
+.ans{
+    color: white;
+    background-color: #2191ef;
+    font-size: large;
+    height: 50px;
+    width: max-content;
+    border: transparent;
+    border-radius: 50%;
+    margin-right: 4px;
+    margin-bottom: 1%;
+    cursor: pointer;
+}
+.submit{
+    width: 150px;
+    border-radius: 0%;
+}
+    </style>
+</head>
+<body>
+    <div id="box">
+    <div id="first-page">
+    <img src="https://images.pexels.com/photos/1111369/pexels-photo-1111369.jpeg?auto=compress&cs=tinysrgb&w=600" id="Logo">
+    <h2 style="color: white;">Answer of Question</h2>
+    <input type="text" placeholder="Name"><br>
+    <button type="button" onclick="myfunc()" id="btn1">Continue Chatting</button>
+</div>
+<nav class="hidden">
+    <span id="back" onclick="back()"> Back </span>
+    
+</nav>
+<div class="hidden" id="chat_box">
+
+</div>
+</div>
+
+<script>
+    var name;
+function myfunc(){
+    name=$("input")[0].value;
+    if(name==''){
+        alert("please type your name !!");
+    }
+    else{
+        move();
+    }
+    
+}
+function move() {
+    $("#first-page").css("visibility","hidden");
+    $("#box").css("background-color","wheat");
+    $(".hidden").css("visibility","visible");
+    $("#chat_box").html("<p> Hello "+name+"</p><p> How Are You </p><button class='ans' onclick='good()'>I am Good !! </button><button class='ans' onclick='notGood()'>NOT Good :( </button>");
+
+}
+function back(){
+    window.location.reload();
+}
+function good(){
+    $("#chat_box").append("<p> Very Nice :) </p>");
+    $(".ans").removeAttr("onclick");
+    move2();
+}
+function notGood(){
+    $("#chat_box").append("<p> Oohh,hope you will be fine asap !! </p>");
+    $(".ans").removeAttr("onclick");
+   move2();
+}
+function move2(){
+    $("#chat_box").append("<p>In which Programm, you need help ?</p>");
+    $("#chat_box").append("<button class='ans' onclick='query()'> About Course Structure </button>");
+    $("#chat_box").append("<button class='ans' onclick='feequery()'> About Fees Structure </button>");
+    $("#chat_box").append("<button class='ans' onclick='query()'> General Query </button>");
+}
+function feequery(){
+    $("#chat_box").append("<p> Fees of Software Engineering is 35000 per semester.<br/> Fees of Computer Science is 30000. </p>");
+    $(".ans").removeAttr("notGood");
+}
+
+function query(){
+    $("#chat_box").append("<textArea placeholder='please write your query here !!' style='height:60px;width:300px'></textArea>");
+    $(".ans").removeAttr("onclick");
+    $("#chat_box").append("<br><button class='ans submit' onclick='done()' >submit</button>")
+}
+var qur=$("textArea")[0].value;
+function done(){
+    $("#chat_box").append("<p>Thanx,For Contacting Us</p><p>your query is submitted to our system...Our team will reach you soon !!</p>");
+}
+</script>
+
+
+
+    <!---------------------- jquery cdn  --------------------------->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!------------------ javascript external link ------------------->
+    <script src="script.js"></script>
+</body>
+</html>

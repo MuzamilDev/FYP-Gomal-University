@@ -1,0 +1,134 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: bisque;
+}
+.text-h{
+    background: url('./iewek-gnos-hhUx08PuYpc-unsplash.jpg');
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+h2{
+    color: maroon;
+    border-right: 3px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+}
+h2{
+    animation: animated-text 15s
+    steps(20) 1s normal both,
+    animated-cursor 700ms steps(20)
+    infinite normal;
+}
+@keyframes animated-text {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 320px;
+    }
+}
+@keyframes animated-cursor {
+    from{
+        background-color: white;
+    }
+    to{
+        background-color: rgb(46, 7, 34);
+    }
+}
+.undergraduate{
+    margin-top: 70px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.bscs{
+ height: 600px;
+ width: 45%;
+ background-color: orangered;
+ border: none;
+ border-radius: 25px;
+}
+#bscs-img{
+    height: 150px;
+    width: 100%;
+}
+.bsse{
+ height: 600px;
+ width: 45%;
+ background-color: orangered;
+ border: none;
+ border-radius: 25px;
+}
+#bsse-img{
+    height: 150px;
+    width: 100%;
+}
+@media (max-width:991px) {
+    .undergraduate{
+        display: block;
+    }
+    .bscs{
+        height: 400px;
+        width: 100%;
+    }
+    p{
+        font-size: 10px;
+    }
+    .bsse{
+        height: 400px;
+        width: 100%;
+    }
+}
+.graduate{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.mscs{
+ height: 600px;
+ width: 45%;
+ background-color: orangered;
+ border: none;
+ border-radius: 25px;
+}
+#mscs-img{
+    height: 150px;
+    width: 100%;
+}
+.phd{
+ height: 600px;
+ width: 45%;
+ background-color: orangered;
+ border: none;
+ border-radius: 25px;
+}
+#phd-img{
+    height: 150px;
+    width: 100%;
+}
+@media (max-width:991px) {
+    .graduate{
+        display: block;
+    }
+    .bscs{
+        margin-bottom: 20px;
+    }
+    .mscs{
+        margin-bottom: 20px;
+        height: 400px;
+        width: 100%;
+    }
+    p{
+        font-size: 10px;
+    }
+    .phd{
+        height: 400px;
+        width: 100%;
+    }
+}

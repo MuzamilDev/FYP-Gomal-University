@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: orange;
+        }
+        .academics-b{
+            margin-top: 30px;
+            width: 100%;
+            height: 200vh;
+            border-left: 1px solid black;
+        }
+        .carousel-item{
+            height: 500px;
+            text-align: center;
+            background-color: white;
+            border: 1px solid yellow;
+        }
+        @media (max-width:991px) {
+            .carousel-item{
+                height: 200px;
+            }
+            
+        }
+        .academics-b{
+            margin-top: 40px;
+        }
+        .course-undergraduate{
+            height: 300px;
+            width: 75%;
+            border:  3px solid #26D;
+            box-shadow: 60px -16px maroon;
+        }
+        .browse-catalog{
+            margin: 10px;
+            height: 50px;
+            width: 150px;
+            background-color: lightskyblue;
+            color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .fa-book{
+            padding: 2px;
+            font-size: 15px;
+            color: black;
+        }
+        .course-Honors{
+            margin-top: 30px;
+            height: 300px;
+            width: 50%;
+            border:  3px solid #26D;
+            box-shadow: 60px -16px maroon;
+        }
+        .course-graduate{
+            margin-top: 30px;
+            height: 300px;
+            width: 75%;
+            border:  3px solid #26D;
+            box-shadow: 60px -16px maroon;
+        }
+        .course-doctorait{
+            margin-top: 30px;
+            height: 300px;
+            width: 55%;
+            border:  3px solid #26D;
+            box-shadow: 60px -16px maroon;
+        }
+        .steps-apply{
+            margin-top: 50px;
+        }
+       
+        .steps-1{
+            margin-bottom: 10px;
+            height: 150px;
+            width: 100%;
+            display: flex;
+        }
+        .steps-2{
+            margin-bottom: 10px;
+            height: 150px;
+            width: 100%;
+            display: flex;
+        }
+        .steps-3{
+            margin-bottom: 10px;
+            height: 150px;
+            width: 100%;
+            display: flex;
+        }
+        .subjects-collection{
+            margin-top: 50px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #subjects-1{
+            height: 400px;
+            width: 23%;
+            text-align: start;
+            background-color: lightgreen;
+            border: none;
+            border-radius: 15px;
+           
+        }
+        #subjects-2{
+            height: 400px;
+            width: 23%;
+            text-align: start;
+            background-color: lightgreen;
+            border: none;
+            border-radius: 15px;
+           
+        }
+        #subjects-3{
+            height: 400px;
+            width: 23%;
+            text-align: start;
+            background-color: lightgreen;
+            border: none;
+            border-radius: 15px;
+            
+        }
+        #subjects-4{
+            height: 400px;
+            width: 23%;
+            text-align: start;
+            background-color: lightgreen;
+            border: none;
+            border-radius: 15px;
+        }
+        .skewbox {
+            top: 120%;
+            left: 113%;
+            height: 400px;
+            width: 1200px;
+            background-color: white;
+            border: 2px solid black;
+            position: absolute;
+            transform: translate(-120%, -113%);
+            display: flex;
+        }
+        
+        .content {
+            height: 100%;
+            width: calc(50% - 50px);
+            background-color: white;
+            padding: 2% 5%;
+            line-height: 1.5rem;
+            font-size: 18px;
+            text-align: justify;
+        }
+        
+        .imagebox {
+            height: 100%;
+            width: calc(50% + 50px);
+            background-color: blue;
+            border-left: 100px solid white;
+            border-bottom: 400px solid transparent;
+        }
+        @media (max-width:991px) {
+            #heading-first{
+                padding: 0px;
+                font-size: 25px;
+                text-align: start;
+            }
+            .course-undergraduate{
+                width: 75%;
+            }
+            .course-Honors{
+                width: 75%;
+            }
+            .course-graduate{
+                width: 75%;
+            }
+            .course-doctorait{
+                width: 75%;
+            }
+            .steps-apply{
+             display: none;
+            }
+           .subjects-collection{
+            top: 50px;
+            bottom: 20px;
+            margin-top: 50px;
+            display: block;
+            position: relative;
+           }
+           #subjects-1{
+            margin-bottom: 20px;
+            width: 75%;
+            border-bottom: 5px solid black;
+            border-radius: 0px;
+
+           }
+           #subjects-2{
+            margin-bottom: 20px;
+            width: 75%;
+            border-bottom: 5px solid black;
+            border-radius: 0px;
+           }
+           #subjects-3{
+            margin-bottom: 20px;
+            width: 75%;
+            border-bottom: 5px solid black;
+            border-radius: 0px;
+           }
+           #subjects-4{
+            margin-bottom: 20px;
+            width: 75%;
+            border-bottom: 5px solid black;
+            border-radius: 0px;
+           }
+        .skewbox{
+            display: none;
+        }
+            
+        }
+    </style>
+</head>
+<body>
+
+    
+
+
+
+            <h1 style="padding: 100px; text-align: center; color:black;" id="heading-first">Share & Explore our Acadamecs Programs</h1>
+    
+
+
+
+    
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="..." alt="First slide">
+                <a href="#">link</a>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="..." alt="Second slide">
+                <a href="#">link</a>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="..." alt="Third slide">
+                <a href="#">link</a>
+              </div>
+            </div>
+          
+
+
+    <div class="container academics-b">
+        <div class="course-undergraduate">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt saepe sit, sapiente repellat animi beatae. Velit explicabo officia molestiae dignissimos. Veniam sit, sequi debitis quia corporis suscipit accusantium beatae. Deserunt?</p>
+            <button class="browse-catalog"><i class="fa fa-book" aria-hidden="true"></i>Browse Catalog</button>
+        </div>
+        <div class="course-Honors">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio est commodi illo quo recusandae atque accusantium! Debitis perspiciatis unde facere similique ab vero dignissimos illum exercitationem voluptatem blanditiis, nostrum corporis!</p>
+            <button class="browse-catalog"><i class="fa fa-book" aria-hidden="true"></i>Browse Catalog</button>
+        </div>
+        <div class="course-graduate">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veniam tempore laborum labore nemo tempora maiores enim unde molestiae, consequatur porro. Officia cumque itaque est vero odio minus modi perspiciatis.</p>
+            <button class="browse-catalog"><i class="fa fa-book" aria-hidden="true"></i>Browse Catalog</button>
+        </div>
+        <div class="course-doctorait">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error odio adipisci sit perferendis, aut beatae numquam iusto maxime eveniet fuga molestias, odit veniam itaque recusandae dolore, porro tempore ab quae!</p>
+            <button class="browse-catalog"><i class="fa fa-book" aria-hidden="true"></i> Browse Catalog</button>
+        </div>
+    </div>
+
+
+
+    <div class="container steps-apply">
+        <div class="steps-1">
+        <span style="padding: 20px; text-align: center; background-color: blue; color: white; height: 70px; width: 70px; border-radius: 50%;">Step 1</span>
+        <i class="fa fa-arrow-right" aria-hidden="true" style="padding: 18px;"></i>
+        <p style="padding: 15px;">How to Apply</p>
+        </div>
+        <div class="steps-2">
+            <span style="padding: 20px; text-align: center; background-color: blue; color: white; height: 70px; width: 70px; border-radius: 50%;">Step 2</span>
+            <i class="fa fa-arrow-right" aria-hidden="true" style="padding: 18px;"></i>
+            <p style="padding: 15px;">How to Apply</p>
+            </div>
+            <div class="steps-3">
+                <span style="padding: 20px; text-align: center; background-color: blue; color: white; height: 70px; width: 70px; border-radius: 50%;">Step 3</span>
+                <i class="fa fa-arrow-right" aria-hidden="true" style="padding: 18px;"></i>
+                <p style="padding: 15px;">How to Apply</p>
+                </div>
+    </div>
+
+
+
+
+
+
+    <div class="container subjects-collection">
+    <div id="subjects-1">
+        <h5 style="padding: 15px; text-align: center;">Software Engineering</h5>
+    <ul>
+        <li style="list-style: none;">Software Engineering</li>
+        <li style="list-style: none;">Programming Fundamental</li>
+        <li style="list-style: none;">OOP Programming</li>
+        <li style="list-style: none;">Computing and Components</li>
+        <li style="list-style: none;">Operation Research</li>
+        <li style="list-style: none;">Object Oriented Software</li>
+        <li style="list-style: none;">Networking</li>
+        <li style="list-style: none;">DataBase</li>
+    </ul>
+    </div>
+    <div id="subjects-2">
+        <h5 style="padding: 15px; text-align: center;"> Computer Science</h5>
+        <ul>
+            <li style="list-style: none;">Information Technology</li>
+            <li style="list-style: none;">Programming Fundamentals</li>
+            <li style="list-style: none;">DataBase System</li>
+            <li style="list-style: none;">Operating System</li>
+            <li style="list-style: none;">Theory Of Automata</li>
+            <li style="list-style: none;">Web Technologies</li>
+            <li style="list-style: none;">Artificial Intelligence</li>
+            <li style="list-style: none;">Visual Programming</li>
+            <li style="list-style: none;">Computer Architecture</li>
+            <li style="list-style: none;">Technical Writing</li>
+        </ul>
+    </div>
+    <div id="subjects-3">
+        <h5 style="padding: 15px; text-align: center;">Master Research</h5>
+        <ul>
+            <li style="list-style: none;">Reasearch</li>
+            <li style="list-style: none;">Technical Writing</li>
+            <li style="list-style: none;">Technical Writing</li>
+            <li style="list-style: none;">Reasearch</li>
+            <li style="list-style: none;">Projects</li>
+            <li style="list-style: none;">Human Computer Intraction</li>
+            <li style="list-style: none;">Project</li>
+            <li style="list-style: none;">Reasearch</li>
+            <li style="list-style: none;">Project</li>
+            <li style="list-style: none;">Business Writing</li>
+            <li style="list-style: none;">Projects</li>
+        </ul>
+    </div>
+    <div id="subjects-4">
+        <h5 style="padding: 15px; text-align: center;">Doctrait</h5>
+        <ul>
+            <li style="list-style: none;">Project-1</li>
+            <li style="list-style: none;">Project-2</li>
+            <li style="list-style: none;">Project-3</li>
+            <li style="list-style: none;">Project-4</li>
+            <li style="list-style: none;">Project-5</li>
+           
+        </ul>
+    </div>
+    </div>
+
+    <script>
+        var subjects_4 = document.getElementById("subjects-4");
+
+    subjects_4.addEventListener("mouseover",function(){
+        subjects_4.style.backgroundColor="#E65C00";
+        subjects_4.style.transition="background-color 1000ms linear";
+    });
+    subjects_4.addEventListener("mouseout",function(){
+        subjects_4.style.backgroundColor="lightgreen";
+    });
+    
+    </script>
+
+<script>
+    var subjects_3 = document.getElementById("subjects-3");
+
+subjects_3.addEventListener("mouseover",function(){
+    subjects_3.style.backgroundColor="#E65C00";
+    subjects_3.style.transition="background-color 1000ms linear";
+});
+subjects_3.addEventListener("mouseout",function(){
+    subjects_3.style.backgroundColor="lightgreen";
+});
+   </script>
+
+    <script>
+        
+        var subjects_2 = document.getElementById("subjects-2");
+
+subjects_2.addEventListener("mouseover",function(){
+    subjects_2.style.backgroundColor="#E65C00";
+    subjects_2.style.transition="background-color 1000ms linear";
+});
+subjects_2.addEventListener("mouseout",function(){
+    subjects_2.style.backgroundColor="lightgreen";
+});
+       
+    </script>
+
+   </script>
+
+        <script>
+         var subjects_1 = document.getElementById("subjects-1");
+
+subjects_1.addEventListener("mouseover",function(){
+    subjects_1.style.backgroundColor="#E65C00";
+    subjects_1.style.transition="background-color 1000ms linear";
+});
+subjects_1.addEventListener("mouseout",function(){
+    subjects_1.style.backgroundColor="lightgreen";
+});
+
+        
+        </script>
+        
+
+        
+        
+        
+       
+
+
+
+
+    <div class="skewbox">
+        <div class="content">
+            <h1>Sir Nasir Jamal</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum autem voluptatem reprehenderit nesciunt rerum dolorem quae quos fugiat neque nostrum? Esse tempore id laboriosam quod repellendus praesentium, fugit in expedita.
+
+            </p>
+        </div>
+        <div class="imagebox"></div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

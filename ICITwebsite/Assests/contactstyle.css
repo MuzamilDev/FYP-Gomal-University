@@ -1,0 +1,409 @@
+body{
+    font-family: 'Gruppo', sans-serif;
+    font-family: 'Lumanosimo', cursive;
+    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Teko', sans-serif;
+}
+.logo{
+    padding: 10px;
+    height: 90px;
+    width: 100%;
+    background-color: #333;
+}
+#cont-logo-img{
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border-radius: 15px;
+}
+.contact-heading{
+    padding: 50px;
+    font-size: 55px;
+    color: blueviolet;
+    position: relative;
+}
+.contact-heading::before{
+    content: "";
+    top:110px;
+    left: 50px;
+    height: 5px;
+    width: 170px;
+    background-color: yellow;
+    position: absolute;
+}
+
+
+.social{
+top: 50%;
+left: 97%;
+height: 130px;
+width: auto;
+display: grid;
+position: fixed;
+background-color: lightslategray;
+z-index: 1;
+}
+.fb-back-div{
+height: 40px;
+width: 40px;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+.fb-back-div:hover{
+transition: width 3s;
+}
+.fa-facebook{
+padding: 15px;
+font-size: 25px;
+color: blue;
+}
+.yt-back-div{
+height: 40px;
+width: 40px;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+.yt-back-div:hover{
+transition: width 3s;
+}
+.fa-youtube{
+padding: 15px;
+font-size: 25px;
+color: red;
+}
+.ig-back-div{
+height: 40px;
+width: 40px;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+.ig-back-div:hover{
+transition: width 3s;
+}
+.fa-instagram{
+padding: 15px;
+font-size: 25px;
+color: rgb(223, 74, 37);
+}
+
+
+.lost-and-find{
+    top: 30%;
+    left: 77%;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    position: absolute;
+}
+@media (max-width:991px) {
+    .lost-and-find{
+     display: none;
+    }
+    
+}
+.contacts-for{
+    margin-top: 250px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.phone-for{
+    height: 200px;
+    width: 25%;
+    text-align: center;
+    border: 5px solid yellow;
+    background-image: linear-gradient(rgb(53, 154, 185),aliceblue);
+    color: aliceblue;
+}
+.mail-for{
+    height: 200px;
+    width: 25%;
+    text-align: center;
+    border: 5px solid yellow;
+    background-image: linear-gradient(rgb(53, 154, 185),aliceblue);
+    color: aliceblue;
+}
+.fax-for{
+    height: 200px;
+    width: 25%;
+    text-align: center;
+    border: 5px solid yellow;
+    background-image: linear-gradient(rgb(53, 154, 185),aliceblue);
+    color: aliceblue;
+}
+@media (max-width:991px) {
+    .contacts-for{
+        display: block;
+    }
+    .phone-for{
+        margin-bottom: 20px;
+        height: 250px;
+        width: 80%;
+        cursor: pointer;
+    }
+    .mail-for{
+        margin-bottom: 20px;
+        height: 250px;
+        width: 80%;
+        cursor: pointer;
+    }
+    .fax-for{
+        margin-bottom: 20px;
+        height: 250px;
+        width: 80%;
+        cursor: pointer;
+    }
+    
+}
+.cont-adv-underg{
+    margin-top: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.ad-bscs{
+    padding: 10px;
+    height: 400px;
+    width: 35%;
+    text-align: center;
+    border: 1px solid black;
+}
+.ad-bsse{
+    padding: 10px;
+    height: 400px;
+    width: 35%;
+    text-align: center;
+    border: 1px solid black;
+}
+@media (max-width:991px) {
+    .cont-adv-underg{
+        display: block;
+    }
+    .ad-bscs{
+        margin-bottom: 20px;
+        width: 80%;
+        border: none;
+        background-color: orangered;
+        border-bottom: 1px solid orangered;
+    }
+    .ad-bsse{
+        margin-bottom: 20px;
+        width: 80%;
+        border: none;
+        background-color: orangered;
+        border-bottom: 1px solid orangered;
+    }
+    .btn-danger{
+        font-size: 20px;
+        color: aliceblue;
+        background-image: linear-gradient(black,white);
+    }
+    
+}
+.cont-adv-gradua{
+    margin-top: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.ad-mscs{
+    padding: 10px;
+    height: 400px;
+    width: 35%;
+    text-align: center;
+    border: 1px solid black;
+}
+.ad-phd{
+    padding: 10px;
+    height: 400px;
+    width: 35%;
+    text-align: center;
+    border: 1px solid black;
+}
+@media (max-width:991px) {
+    .cont-adv-gradua{
+        display: block;
+    }
+    .ad-mscs{
+        margin-bottom: 20px;
+        width: 80%;
+        border: none;
+        background-color: orangered;
+        border-bottom: 1px solid orangered;
+    }
+    .ad-phd{
+        margin-bottom: 20px;
+        width: 80%;
+        border: none;
+        background-color: orangered;
+        border-bottom: 1px solid orangered;
+    }
+    .btn-danger{
+        font-size: 20px;
+        color: aliceblue;
+        background-image: linear-gradient(black,white);
+    }
+}
+.footer-section{
+    margin-top: 50px;
+    width: 100%;
+    background-color: rgb(14, 134, 240);
+    display: flex;
+}
+@media (max-width:991px) {
+    .footer-section{
+        display: block;
+    }
+    .footer-column-1{
+        width: 300px;
+        border-bottom: 1px solid black;
+    }  
+    .footer-column-2{
+        width: 300px;
+        border-bottom: 1px solid black;
+    }  
+    .footer-column-3{
+        width: 300px;
+        border-bottom: 1px solid black;
+    }  
+    .footer-column-4{
+        width: 300px;
+        border-bottom: 1px solid black;
+    }  
+    .footer-column-5{
+        width: 300px;
+        border-bottom: 1px solid black;
+    }  
+}
+
+.footer-column-1{
+    padding: 15px;
+    height: 300px;
+    width: 200px;
+    text-align: start;
+}
+.footer-column-2{
+    padding: 15px;
+    height: 300px;
+    width: 200px;
+    text-align: start;
+}
+.footer-column-3{
+    padding: 15px;
+    height: 300px;
+    width: 200px;
+    text-align: start;
+}
+.footer-column-4{
+    padding: 15px;
+    height: 300px;
+    width: 200px;
+    text-align: start;
+}
+.footer-links{
+padding-top: 15px;
+font-size: 13px;
+text-decoration: none;
+text-align: start;
+color: black;
+display: block;
+}
+.footer-links:hover{
+ color: orangered;
+ text-decoration: none;
+}
+.footer-column-5{
+    height: 300px;
+    width: 320px;
+    text-align: start;
+}
+label{
+    margin-top: 80px;
+    height: 100px;
+    width: 300px;
+    position: relative;
+}
+input[type=email]{
+    height: 50px;
+    width: 200px;
+    background-color: #2e2b2b;
+    color: aliceblue;
+    border: none;
+}
+.subscribe-btn{
+    top:0px;
+    left: 200px;
+    bottom: 0px;
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    color: aqua;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+    position: absolute;
+}
+.social{
+    height: 70px;
+    width: 250px;
+    align-items: center;
+    display: flex;
+}
+.fb-back-div{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.fb-back-div:hover{
+  background-color: orangered;
+}
+.fa-facebook{
+    padding: 15px;
+    font-size: 25px;
+    color: blue;
+}
+.yt-back-div{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.yt-back-div:hover{
+  background-color: orangered;
+}
+.fa-youtube{
+    padding: 15px;
+    font-size: 25px;
+    color: red;
+}
+.ig-back-div{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.ig-back-div:hover{
+  background-color: orangered;
+}
+.fa-instagram{
+    padding: 15px;
+    font-size: 25px;
+    color: rgb(223, 74, 37);
+}

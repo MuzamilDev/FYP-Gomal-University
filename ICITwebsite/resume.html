@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script:wght@400;500&family=Gruppo&family=Lumanosimo&family=Merriweather&family=Poppins&family=Teko&display=swap" rel="stylesheet">
+    <title>My Resume</title>
+    <style>
+  body{
+  background-image: url("https://images.pexels.com/photos/5124910/pexels-photo-5124910.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+  background-position: fixed;
+  font-family: 'Dancing Script', cursive;
+}
+.resume{
+  padding: 27px 100px;
+}
+.container{
+  padding: 10px 30px;
+  margin: auto;
+  height: auto;
+  width: 70%;
+  background-color: lightgoldenrodyellow;
+  border-radius: 10px;
+}
+label{
+  color: black;
+  font-size: 20px;
+}
+button:hover{
+  font-size: 23px;
+}
+.output-section{
+  margin: 10px auto;
+  width: 70%;
+  display: none;
+}
+.outputs{
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("https://plus.unsplash.com/premium_photo-1675063044882-522a7d281b2f?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Zmxvd2VyJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D"); 
+border: 5px solid black; 
+margin-bottom: 10px; 
+}
+.heading { 
+padding: 20px 10px; 
+text-align: center; 
+color: orange; 
+background-color: lightblue; 
+} 
+.information{
+  padding: 20px;
+  display: flex;
+}
+.leftside{
+  width: 50%;
+  border-right: 5px solid lightgoldenrodyellow;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+}
+.rightside{
+  padding-left: 20px;
+  width: 50%;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+}
+.box{
+  padding: 5px 10px;
+  margin: 10px 0px;
+  height: auto;
+  overflow-wrap: break-word;
+}
+.box h2, 
+.box p{
+  margin-bottom: 5px;
+}
+.print-btn{
+  margin: 10px auto;
+  display: block;
+  background-color: lightsalmon;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media screen and (max-width: 920px) { 
+.container { 
+width: 100%; 
+} 
+
+.output-section { 
+width: 87%; 
+} 
+} 
+
+@media screen and (max-width: 600px) { 
+.resume { 
+padding: 10px 30px; 
+} 
+
+h1 { 
+font-size: 160%; 
+} 
+
+.information { 
+flex-direction: column; 
+} 
+
+.leftside { 
+border-right: none; 
+width: 100%; 
+} 
+
+.rightside { 
+padding-left: 0; 
+width: 100%; 
+} 
+} 
+    </style>
+</head>
+<body>
+    
+    <section class="resume">
+        <div class="container">
+            <h1 style="text-align: center; background-color: lightblue;">CV Generate</h1>
+            <div class="resume-built">
+            <form class="inputs">
+             <div class="form-group mt-2">
+                <label for="Name">Name</label>
+                <input type="text" class="form-control" id="Name" name="nameField" placeholder="Write Name here" />
+             </div>
+
+             <div class="form-group mt-2">
+                <label for="Email">Email</label>
+                <input type="email" class="form-control" id="Email" name="EmailField" placeholder="Write Email here" />
+             </div>
+
+             <div class="form-group mt-2">
+                <label for="Contact">Contact</label>
+                <input type="number" class="form-control" id="Contact" name="contactField" placeholder="Write Contact here" />
+             </div>
+
+             <div class="form-group mt-2">
+                <label for="Address">Address</label>
+                <input type="text" class="form-control" id="Address" name="addressField" placeholder="write name here" />
+             </div>
+
+
+
+
+             <textarea name="academicsFieldo" placeholder="Matric" rows="2" cols="15" class="mt-2" title="Education first"></textarea>
+             <textarea name="academicsFieldt" placeholder="Intermediate" rows="2" cols="15" class="mt-2" title="Education Second"></textarea>
+             <textarea name="academicsFieldth" placeholder="Bechalor" rows="2" cols="15" class="mt-2" title="Education Third"></textarea>
+             <textarea name="academicsFieldf" placeholder="Master" rows="2" cols="15" class="mt-2" title="Education Fourth"></textarea>
+             <textarea name="academicsFieldfv" placeholder="other" rows="2" cols="15" class="mt-2" title="Education Fifth"></textarea><br/>
+
+             <textarea name="experienceFieldo" placeholder="Your Work Experience" rows="2" cols="15" class="mt-2" title="Work Experience"></textarea>
+             <textarea name="experienceFieldt" placeholder="Your Work Experience" rows="2" cols="15" class="mt-2" title="Work Experience"></textarea>
+             <textarea name="experienceFieldth" placeholder="Your Work Experience" rows="2" cols="15" class="mt-2" title="Work Experience"></textarea>
+             <textarea name="experienceFieldf" placeholder="Your Work Experience" rows="2" cols="15" class="mt-2" title="Work Experience"></textarea><br/>
+
+             <textarea name="skillField" placeholder="Write Your Skills" rows="2" cols="103" class="mt-2" title="Skills Seperated with Commas"></textarea><br/>
+             <textarea name="projectsField" placeholder="provide Links of Completed Projects" rows="2" cols="103" title="Provide Links of Projects" class="mt-2"></textarea><br/>
+            </form>
+        </div>
+        </div>
+    </section>
+
+    <div class="output-section"></div>
+    <button style="margin: 0px auto; display: block;" class="btn btn-success" onclick="makeResume()">Generate</button>
+
+    <script>
+
+        const main = document.querySelector(".resume");
+        const inputFields = document.querySelector(".inputs");
+        const output = document.querySelector(".output-section");
+
+        let isOutNow = true;
+
+        function makeResume(){
+            if(isOutNow){
+
+            main.style.display = "none";
+            isOutNow = false;
+
+
+            output.style.display = "block"; 
+		    output.innerHTML = ` 
+			<div class="outputs"> 
+				<div class="heading"> 
+					<h2>${inputFields["nameField"].value}</h2> 
+					<h6>${inputFields["EmailField"].value}</h6> 
+                    <h6>${inputFields["contactField"].value}</h6> 
+                    <h6>${inputFields["addressField"].value}</h6> 
+				</div> 
+				<div class="information"> 
+					<div class="leftside"> 
+						<div class="box"> 
+			            <h2 style="color:lightgoldenrodyellow">Academics</h2>
+                        <ul>
+                            <li style="color:white";>${inputFields["academicsFieldo"].value}</li>
+                            <li style="color:white";>${inputFields["academicsFieldt"].value}</li>
+                            <li style="color:white";>${inputFields["academicsFieldth"].value}</li>
+                            <li style="color:white";>${inputFields["academicsFieldf"].value}</li>
+                            <li style="color:white";>${inputFields["academicsFieldfv"].value}</li>
+						</div> 
+                        </div>
+                        
+                        <div class="rightside"> 
+						<div class="box"> 
+							<h2 style="color:lightgoldenrodyellow";>Experience</h2> 
+                            <ul>
+							<li style="color:white";>${inputFields["experienceFieldo"].value}</li> 
+                            <li style="color:white";>${inputFields["experienceFieldt"].value}</li> 
+                            <li style="color:white";>${inputFields["experienceFieldth"].value}</li> 
+                            <li style="color:white";>${inputFields["experienceFieldf"].value}</li> 
+                            </ul>
+						</div> 
+						<div class="box"> 
+							<h2 style="color:lightgoldenrodyellow";>Skills</h2> 
+							<p style="color:white";>${inputFields["skillField"].value}</p> 
+						</div>
+						<div class="box"> 
+							<h2 style="color:lightgoldenrodyellow";>Projects</h2> 
+							<p style="color:white";>${inputFields["projectsField"].value}</p> 
+						</div> 
+					</div> 
+				</div> 
+                </div>
+			<button class="print-btn" onclick="print()">Print Resume</button> 
+		`; }
+            
+            else{
+                main.style.display= "block";
+                isOutNow = true;
+
+                output.style.display="none";
+                output.innerHTML= "";
+            }
+        }
+
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
